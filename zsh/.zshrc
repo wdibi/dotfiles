@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias dotfiles="code ~/Developer/dotfiles"
 alias listlinks='ls -la  | grep "\->"'
-alias refresh="exec $shell"
+alias refresh="exec zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
