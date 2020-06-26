@@ -6,7 +6,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting vscode history)
 
 source $ZSH/oh-my-zsh.sh
 
+alias dev="cd ~/Developer"
 alias dotfiles="code ~/Developer/dotfiles"
+alias zshconfig="code ~/Developer/dotfiles/zsh/.zshrc"
 alias listlinks='ls -la  | grep "\->"'
 alias refresh="exec zsh"
 
