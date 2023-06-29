@@ -1,7 +1,10 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'folke/tokyonight.nvim'
+    use { "bluz71/vim-moonfly-colors", as = "moonfly" }
     use 'j-hui/fidget.nvim'
+    use 'theprimeagen/harpoon'
+    use 'mbbill/undotree'
+    use 'tpope/vim-fugitive'
     use {
         'akinsho/flutter-tools.nvim',
         requires = {
@@ -44,4 +47,13 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     }
+
+    use({
+        "folke/trouble.nvim",
+        config = function()
+            require("trouble").setup {
+                icons = false,
+            }
+        end
+    })
 end)
