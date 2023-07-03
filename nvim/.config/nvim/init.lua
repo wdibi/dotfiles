@@ -1,1 +1,1 @@
-require("wdibi")
+require('wdibi')

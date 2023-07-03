@@ -1,6 +1,6 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+    use { 'bluz71/vim-moonfly-colors', as = 'moonfly' }
     use 'j-hui/fidget.nvim'
     use 'theprimeagen/harpoon'
     use 'mbbill/undotree'
@@ -39,19 +39,19 @@ return require('packer').startup(function(use)
         }
     }
     use {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
+        'nvim-neo-tree/neo-tree.nvim',
+        branch = 'v2.x',
         requires = {
-            "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons",
-            "MunifTanjim/nui.nvim",
+            'nvim-lua/plenary.nvim',
+            'nvim-tree/nvim-web-devicons',
+            'MunifTanjim/nui.nvim',
         }
     }
 
     use({
-        "folke/trouble.nvim",
+        'folke/trouble.nvim',
         config = function()
-            require("trouble").setup {
+            require('trouble').setup {
                 icons = false,
             }
         end
