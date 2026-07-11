@@ -1,18 +1,23 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="/Users/will/.oh-my-zsh"
+#!/bin/zsh
 
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting vscode history)
+plugins=(git zsh-autosuggestions vscode history zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
-alias dev="cd ~/Developer"
-alias dotfiles="code ~/Developer/dotfiles"
-alias zshconfig="code ~/Developer/dotfiles/zsh/.zshrc"
-alias listlinks='ls -la  | grep "\->"'
-alias refresh="exec zsh"
-alias rmds="find . -name ".DS_Store" -print -delete"
+source "$HOME/alias.zsh"
+source "$HOME/exports.zsh"
+[[ -r "$HOME/local-exports.zsh" ]] && source "$HOME/local-exports.zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize the prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source "$HOME/.p10k.zsh"
 
+# nvm
+source "$NVM_DIR/nvm.sh"
+
+# Dart CLI completion
+source "$HOME/.dart-cli-completion/zsh-config.zsh"
+
+# fzf
+source <(fzf --zsh)
