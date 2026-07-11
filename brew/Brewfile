@@ -9,9 +9,11 @@ brew "htop"
 brew "btop"
 brew "nmap"
 brew "wget"
+
 # compression
 brew "gzip"
 brew "unzip"
+
 # file
 brew "fzf"
 brew "grep"
@@ -20,18 +22,23 @@ brew "yq"
 brew "less"
 brew "stow"
 brew "tree"
+
 # ios/macos
 brew "watchman"
 brew "cocoapods"
 brew "mas"
+
 # js
 brew "node"
 brew "pnpm"
+
 # python
 brew "python"
 brew "pyenv"
+
 # java
 brew "jenv"
+
 # dev
 brew "k9s"
 brew "gh"
@@ -39,10 +46,14 @@ brew "railway"
 brew "cmake"
 brew "docker"
 brew "act"
+brew "kustomize"
+brew "argocd"
+
 # db
 brew "postgresql"
 brew "sqlite"
 brew "redis"
+
 # security
 brew "amass"
 
@@ -52,3 +63,4 @@ cask "cmux"
 cask "orbstack"
 cask "stats"
 cask "sf-symbols"
+
